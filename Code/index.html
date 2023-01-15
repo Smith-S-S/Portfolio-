@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smith</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d0cc513d47.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images-2/logo.png" class="Logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Protfolio</a></li>
+                <li><a href="#">Contact</a></li>
+                
+
+            </ul>
+        </nav>
+        <div class="header-test">
+            <p>Ai Engineer</p>
+            <h1>Hi, iam <span>Smith</span> from <br> Singapore currently in SRM</h1>
+        </div>
+    </div>
+
+</div>
+<!---------about------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+              <div class="about-col-1">
+                <img src="images-2/user.png">
+              </div>
+              <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>smith is the good boy he worked in the singapore army for the long time so he have some idea about the team management</p>
+
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experiancce')">Experiance</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Ai</span><br>projects</li>
+                        <li><span>ml</span><br>machining learning projects</li>
+                        <li><span>deep learning</span><br>Deep learning projects</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experiancce">
+                    <ul>
+                        <li><span>2018</span><br>armi</li>
+                        <li><span>2020</span><br>airforce</li>
+                        <li><span>2022</span><br>srm</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2018</span><br>12</li>
+                        <li><span>2019</span><br>army</li>
+                        <li><span>2024</span><br>srm finish</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!---------services------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Ai Projects</h2>
+                <p>think about the projects u have in the resume it helps lot in the hr to pic u out </p>
+                <a href="#">learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Ml Projects</h2>
+                <p>think about the projects u have in the resume it helps lot in the hr to pic u out </p>
+                <a href="#">learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>Dl Projects</h2>
+                <p>think about the projects u have in the resume it helps lot in the hr to pic u out </p>
+                <a href="#">learn more</a>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+<!---------portfolio------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images-2/work-1.png">
+                <div class="layer">
+                    <h3>Social Media</h3>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images-2/work-2.png">
+            </div>
+            <div class="work">
+                <img src="images-2/work-3.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script>
+
+    var tablinks =document.getElementsByClassName("tab-links");
+    var tabcontents =document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+
+
+</script>
+
+</body>
+</html>
